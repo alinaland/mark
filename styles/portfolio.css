@@ -24,7 +24,6 @@ body {
 }
 
 header {
-  margin: 0 auto;
   background-image: url("/images/markCover.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,16 +36,17 @@ header {
 header h1 {
   line-height: 1;
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 600;
 }
 header h2 {
   line-height: 1.5;
   text-align: center;
-  font-size: 38px;
+  font-size: 40px;
 }
 
 h2 {
+  text-align: center;
   font-size: 38px;
 }
 .logo {
@@ -85,7 +85,7 @@ a:hover {
 
 .theme:hover {
   background: tomato;
-  color: #f7f6f2;
+  color: aliceblue;
   border: 1.5px solid tomato;
 }
 
@@ -121,6 +121,12 @@ footer a {
 }
 
 @media (max-width: 960px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 26px;
+  }
   .grid {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
