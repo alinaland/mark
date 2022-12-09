@@ -25,45 +25,37 @@
   </head>
 
   <body>
-    <div class="home-nav">
-      <div class="container">
-        <nav class="d-flex justify-content-between">
-          <a href="/"><img src="/images/markLogo.jpeg" class="logo" /></a>
-          <ul>
-            <li>
-              <a href="mailto:ananyevmark1@gmail.com" title="Email">
-                <i class="fa-solid fa-paper-plane"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/mark_a_photography/"
-                target="_blank"
-                title="Instagram"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <button class="theme">Light Switch</button>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+    <header>
+      <h1>Mark Ananyev</h1>
+      <h2>Photographer based in Brooklyn, New York</h2>
+      <button class="theme">Mode</button>
+    </header>
     <div class="container">
-      <section class="about">
-        <h1>Mark Ananyev</h1>
-        <h2>Photographer based in Brooklyn, New York</h2>
-        <p>
-          Hey there, my name is Mark. I am a high school student living in New
-          York. I love exploring hidden spots all over New York and
-          photographing my friends. I am drawn to strong colors, dramatic
-          landscapes, and light. I have worked with various organizations and
-          photographed large group events - weddings, parties, graduations,
-          anniversaries - you name it! I enjoy photography because it gives me
-          the opportunity to connect with different people and capture memorable
-          moments. Check out my work below and get in touch!
-        </p>
+      <h2>A bit about me</h2>
+      <p>
+        Hey there, my name is Mark. I am a high school student living in New
+        York. I love exploring hidden spots all over New York and photographing
+        my friends. I live in Brighton Beach and for those who don't know it,
+        it's a very colorful part of New York - one of the last real ethnic
+        enclaves of New York City. I am drawn to strong colors, dramatic
+        landscapes, and light. I use Sony a7iii, it's a great camera because it
+        is fundamentally very easy to use, you never run out of space and the
+        colors come out great. I have worked with various organizations and
+        photographed large group events - weddings, parties, graduations,
+        anniversaries - you name it! I enjoy photography because it gives me the
+        opportunity to connect with different people and capture memorable
+        moments. Check out my work below and let's get in touch!
+      </p>
+      <section class="d-flex justify-content-center">
+        <a href="mailto:ananyevmark1@gmail.com" title="Email">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/mark_a_photography/"
+          target="_blank"
+          title="Instagram"
+          ><i class="fa-brands fa-instagram"></i>
+        </a>
       </section>
       <div class="grid">
         <img
@@ -115,12 +107,17 @@
           alt="photography"
         />
         <img
-          src="images/mark13.jpeg"
+          src="images/mark20.jpeg"
           class="img-fluid rounded shadow"
           alt="photography"
         />
         <img
           src="images/mark9.jpeg"
+          class="img-fluid rounded shadow"
+          alt="photography"
+        />
+        <img
+          src="images/mark13.jpeg"
           class="img-fluid rounded shadow"
           alt="photography"
         />
@@ -165,10 +162,10 @@
         >
       </footer>
     </div>
+
     <script>
       function changeTheme() {
-        let body = document.querySlector("body");
-
+        let body = document.querySelector("body");
         body.classList.toggle("dark");
       }
 
